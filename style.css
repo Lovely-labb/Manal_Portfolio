@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Montserrat';
+}
+/* NAV BAR */
+.section_one{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+}
+.firstline{
+    height: 10%;
+    width: 100vw;
+    background-color:#CA8787;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color: white;
+}
+.logo{
+    margin: 15px;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.WDlogo{
+    padding-top: 10px;
+    height: 50px;
+    width: 10%;
+    justify-content: start;
+    align-items: center;
+    border-radius: 100px;
+}
+.nav{
+    margin: 25px;
+    width: 50%;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ABOUT ME */
+/* .section_one{
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFEBD4;
+} */
+.parent{
+    height: 90%;
+    width: 100%;
+}
+.child1{
+    height: 30%;
+    width: 100%;
+    display: flex;
+}
+.bg{
+    height: 100%;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.child2{
+    height: 70%;
+    width: 100%;
+    display: flex;
+}
+.containerL{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.left{
+    height: 90%;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #CA8787;
+}
+.right{
+    height: 75%;
+    width: 40%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FFD0D0;
+    margin-left: -200px;
+    font-size: 70%;
+}
+.ID{
+    height: 90px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.containerR{
+    height: 100%;
+    width: 40%;
+}
+.div1{
+    height: 20%;
+    width: 100%;
+}
+.aboutme{
+    padding-top: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.div2{
+    height: 70%;
+    width: 100%;
+}
+.abouttext{
+    padding-top: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* SECTION 2 "HOBBIES"*/
+.section_two{
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFF2D7;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+/* .line1{ 
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hobbies{
+    height: 70%;
+    width: 50% ;
+    background-color:#CA8787;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.secparent{
+    height: 70%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    gap: 5px;
+    border: 3px solid red;
+/* } */
+.hobbyparent{
+    height: 90px;
+    width: 40%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color:#CA8787;
+    color: white;
+}
+.secparent{ 
+    height: 70%;
+    width: 70%;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+} 
+.child{ 
+    height: 33.33%;
+    width: 100%;
+
+} 
+/* .secchild{ 
+    height: 10%;
+    width: 100%;
+    background-color:#CA8787;
+    color: white;
+    gap: 3px;
+/* } */
+
+.thirdchild{
+    background-color:#FFD0D0;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.codingbox{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    background-color: #E1ACAC;
+}
+.codepic{
+    height: 100%;
+    width: 80%;
+}
+.codingtext{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+}
+.fourthchild{
+    background-color:#E1ACAC;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+}
+.sporttext{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+}
+.sportbox{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    background-color: #FFD0D0;
+}
+.sportpic{
+    height: 100%;
+    width: 80%;
+}
+.fifthsecchild{
+    background-color:#FFD0D0;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.travelbox{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    background-color: #E1ACAC;
+}
+.travelpic{
+    height: 100%;
+    width: 80%;
+}
+.traveltext{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+}
+
+
+/* THIRD SECTION "SKILLS" */
+.section_three{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.skillsparent{
+    height: 90px;
+    width: 40%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color:#CA8787;
+    color: white;
+}
+.thirdparent{
+    height: 70%;
+    width: 60%;
+}
+.insideparentUp{
+    height: 50%;
+    width: 100%;
+}
+.uptxt{
+    height: 30%;
+    width: 100%;
+}
+.downpic{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+.insideparentDown{
+    height: 50%;
+    width: 100%;
+}
+.uptxt{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.webDtxt{
+    height: 70%;
+    width: 50%;
+    background-color: #E1ACAC;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upic{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.downtxt{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.progtxt{
+    height: 70%;
+    width: 50%;
+    background-color: #E1ACAC;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* FOURTH SECTION "GALLERY" */
+.section_four{
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFF2D7;
+}
+
+/* FIFTH SECTION "REVIEWS" */
+.section_five{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+}
