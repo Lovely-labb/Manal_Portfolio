@@ -579,35 +579,35 @@ p {
     border-radius: 25px;
 }
 
-/* Progress Bar Widths */
+
 .progress-photoshop {
-    width: 85%; /* Photoshop progress */
-    background-color: #ab1457; /* Color can be adjusted */
+    width: 85%; 
+    background-color: #ab1457; 
 }
 
 .progress-illustrator {
-    width: 90%; /* Illustrator progress */
-    background-color: #ab1457; /* Color can be adjusted */
+    width: 90%; 
+    background-color: #ab1457; 
 }
 
 .progress-html-css {
-    width: 80%; /* HTML & CSS progress */
-    background-color: #ab1457; /* Color can be adjusted */
+    width: 80%; 
+    background-color: #ab1457; /
 }
 
 .progress-javascript {
-    width: 75%; /* Javascript progress */
-    background-color: #ab1457; /* Color can be adjusted */
+    width: 75%; 
+    background-color: #ab1457; 
 }
 
 .progress-flash {
-    width: 65%; /* Flash & Actionscript progress */
-    background-color: #ab1457; /* Color can be adjusted */
+    width: 65%; 
+    background-color: #ab1457; 
 }
 
 .progress-csharp {
-    width: 70%; /* C# progress */
-    background-color: #ab1457; /* Color can be adjusted */
+    width: 70%; 
+    background-color: #ab1457; 
 }
 
  /* FIFTH SECTION 'GALLERY' */
@@ -616,4 +616,46 @@ p {
     width: 100vw;
     background-color: #ffffff;
     border: black solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .fifthparent{
+    height: 60%;
+    width: 60%;
+    border: black solid 2px;
+    align-items: center;
+    display: flex;
+ }
+ .galleryL{
+    height: 100%;
+    width: 40%;
+    border: red solid 2px;
+    display: flex;
+    justify-content: center;
+ }
+ .tokyo{
+    height: 100%;
+    width: 90%;
+ }
+ .galleryR{
+    height: 100%;
+    width:60%;
+    border: blue solid 2px;
+ }
+ .up{
+    height: 50%;
+    width: 100%;
+    border: green solid 2px;
+ }
+ .bread{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: start;
+ }
+ .down{
+    height: 50%;
+    width: 100%;
+    border: purple solid 2px;
  }
