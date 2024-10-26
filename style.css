@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+*, *::after, *::before{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -232,11 +232,32 @@ html{
     height: 100vh;
     width: 100vw;
     background-color: white;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     display: flex;
     gap: 20px;
     border: black solid 2px;
+}
+.parenttitle_H{
+    height: 10%;
+    width: 100%;
+    margin-top: 20px;
+}
+.hobby_cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hobby_title{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 18px;
+}
+.hobby_title::before, .hobby_title::after{
+    content: "";
+    height: 2px;
+    background-color: black;
+    display: block;
 }
 /* .line1{ 
     height: 100px;
@@ -272,13 +293,20 @@ html{
     align-items: start;
     color: black;
 }*/
+.parentcontent_H{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .parent1{
     height: 80%;
     width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    border: blue solid 2px;
 }
 .baby1{
     height: 70%;
@@ -401,8 +429,9 @@ html{
     background-color:#CA8787;
     color: white;
  } */
+
 .thirdparent{
-    height: 80%;
+    height: 70%;
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -623,39 +652,74 @@ p {
  .fifthparent{
     height: 60%;
     width: 60%;
-    border: black solid 2px;
+
     align-items: center;
     display: flex;
  }
  .galleryL{
     height: 100%;
-    width: 40%;
-    border: red solid 2px;
+    width: 50%;
+
     display: flex;
     justify-content: center;
  }
  .tokyo{
     height: 100%;
-    width: 90%;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
  }
  .galleryR{
     height: 100%;
-    width:60%;
-    border: blue solid 2px;
+    width:50%;
+
  }
  .up{
     height: 50%;
-    width: 100%;
-    border: green solid 2px;
+    width: 90%;
+
+    justify-content: space-evenly;
+    display: flex;
+    gap: 10px;
  }
  .bread{
-    height: 100%;
-    width: 40%;
-    display: flex;
-    align-items: start;
+    height: 95%;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+ .lion{
+    height: 95%;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
  }
  .down{
     height: 50%;
+    width: 90%;
+
+    justify-content: space-evenly;
+    display: flex;
+    gap: 10px;
+ }
+ .downL{
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    align-items: end;
+ }
+ .gd1{
+    height: 95%;
     width: 100%;
-    border: purple solid 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+ .downR{
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    align-items: end;
+ }
+ .paris{
+    height: 95%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  }
