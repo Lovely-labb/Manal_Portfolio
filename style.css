@@ -90,12 +90,18 @@ html{
 .bg{
     height: 100%;
     width: 100vw;
-
 }
 .background_text{
     position: absolute;
     top: 0;
     padding: 10px;
+    margin-left: 25px;
+    color: black;
+    line-height: 30px;
+}
+.background_text h3{
+    color: black;
+    font-size: 20px;
 }
 
 .child2{
@@ -129,7 +135,6 @@ html{
     text-align: center;
     color: #ab1457;
     display: flex;
-    
     justify-content: center;
     font-size: 25px;
 }
@@ -241,6 +246,9 @@ html{
     height: 10%;
     width: 100%;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hobby_cont{
     display: flex;
@@ -251,11 +259,12 @@ html{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    column-gap: 18px;
+    column-gap: 50px;
 }
 .hobby_title::before, .hobby_title::after{
     content: "";
-    height: 2px;
+    height: 3px;
+    width: 650px;
     background-color: black;
     display: block;
 }
@@ -340,7 +349,7 @@ html{
 .code_text p{
     margin-top: 20px;
     margin-left: 20px;
-    font-size: 17px;
+    font-size: 15px;
 }
 .baby2{
     height: 70%;
@@ -373,7 +382,7 @@ html{
 .sport_text p{
     margin-top: 20px;
     margin-left: 20px;
-    font-size: 17px;
+    font-size: 15px;
 }
 .baby3{
     height: 70%;
@@ -406,7 +415,7 @@ html{
 .travel_text p{
     margin-top: 20px;
     margin-left: 20px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 /* THIRD SECTION "ANYTHING" */
@@ -419,6 +428,40 @@ html{
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+.parenttitle_A{
+    height: 10%;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.parentcontent_A{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: navy solid 2px;
+}
+.services_cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services_title{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 70px;
+}
+.services_title::before, .services_title::after{
+    content: "";
+    height: 2px;
+    width: 650px;
+    background-color: black;
+    display: block;
 }
 /*.skillsparent{
     height: 90px;
@@ -477,7 +520,6 @@ html{
     letter-spacing: .5px;
     line-height: 30px;
 }
-
 .boxR{
     height: 100%;
     width: 45%;
@@ -530,19 +572,49 @@ html{
     align-items: center;
     border: blue solid 2px;
 }
-.skillparent{
+/*.skillparent{
     height: 50px;
     width: 40%;
     display: flex;  
     justify-content: center;
     align-items: center;
+} */
+.parenttitle_S{
+    height: 10%;
+    width: 100%;
+    margin-top: 20px;
+}
+.parentcontent_S{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills_cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills_title{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 70px;
+}
+.skills_title::before, .skills_title::after{
+    content: "";
+    height: 2px;
+    width: 650px;
+    background-color: black;
+    display: block;
 }
 .skills-section {
     height: 75%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
-    max-width: 1000px; /* Center the content */
+    max-width: 1000px; 
     width: 100%; 
     justify-content: center;
     align-items: center;
