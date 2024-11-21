@@ -14,9 +14,6 @@ html{
     height: 100vh;
     width: 100vw;
     background-color: #ffffff;
-    border: black solid 2px;
-
-
 }
 .firstline{
     height: 10%;
@@ -26,6 +23,7 @@ html{
     justify-content: space-between;
     align-items: end;
     color: white;
+    position: fixed;
 }
 .logo{
     margin: 15px;
@@ -54,11 +52,11 @@ html{
     color: rgb(255, 255, 255); 
     transition: color 0.3s; 
 }
-.nav a:hover {
-    color: black;
-}
 .nav a:active {
     color: black
+}
+.nav a:hover {
+    color: black;
 }
  ul{
     display: flex;
@@ -71,12 +69,10 @@ html{
     padding: 7px 13px;
     border-radius: 3px;
   }
+
+
+
 /* ABOUT ME */
-/* .section_one{
-    height: 100vh;
-    width: 100vw;
-    background-color: #FFEBD4;
-} */
 .parent{
     height: 90%;
     width: 100%;
@@ -132,7 +128,6 @@ html{
 .ID{
     height: 170px;
     width: 170px;
-
 }
 .text_containerL{
     height: 30%;
@@ -152,7 +147,6 @@ html{
 .containerR{
     height: 90%;
     width: 40%;
-
 }
 .div1{
     height: 25%;
@@ -187,7 +181,6 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .box{
     height: 90%;
@@ -195,8 +188,6 @@ html{
     border: #ca8787 3px solid;
     margin-left: 10px;
     margin-right: 10px;
-
-
 }
 .box1 h4{
     color: black;
@@ -247,12 +238,10 @@ html{
     background-color: white;
     flex-direction: column;
     display: flex;
-    border: black solid 2px;
 }
 .parenttitle_H{
     height: 10%;
     width: 100%;
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,53 +252,20 @@ html{
     justify-content: center;
 }
 .hobby_title{
-    display: flex; /*grid kanina*/
+    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    column-gap: 20px;
+    justify-content: center;
+    column-gap: 100px;
 }
 .hobby_title::before, .hobby_title::after{
     content: "";
     height: 2.5px;
-    width: 680px;
+    width: 600px;
     background-color: black;
     display: block;
 }
-
-/* .line1{ 
-    height: 100px;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.hobbies{
-    height: 70%;
-    width: 50% ;
-    background-color:#CA8787;
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-.secparent{
-    height: 70%;
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column ;
-    gap: 5px;
-    border: 3px solid red;
-/* } */
-/* .hobbyparent{ 
-    height: 90px;
-    width: 40%;
-    display: flex;  
-    justify-content: center;
-    align-items: start;
-    color: black;
-}*/
 .parentcontent_H{
     height: 90%;
     width: 100%;
@@ -323,7 +279,6 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: blue solid 2px;
 }
 .baby1{
     height: 70%;
@@ -426,6 +381,8 @@ html{
     font-size: 15px;
 }
 
+
+
 /* THIRD SECTION "ANYTHING" */
 .section_three{
     height: 100vh;
@@ -435,7 +392,6 @@ html{
 .parenttitle_A{
     height: 10%;
     width: 100%;
-    border: black solid 2px;
     display: flex;
     justify-content: center;
 }
@@ -447,8 +403,10 @@ html{
 }
 .services_title{
     display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    justify-content: center;
     column-gap: 100px;
 }
 .services_title::before, .services_title::after{
@@ -464,19 +422,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: navy solid 2px;
 }
-
-/*.skillsparent{
-    height: 90px;
-    width: 40%;
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-    background-color:#CA8787;
-    color: white;
- } */
-
 .thirdparent{
     height: 70%;
     width: 60%;
@@ -574,15 +520,7 @@ html{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border: blue solid 2px;
 }
-/*.skillparent{
-    height: 50px;
-    width: 40%;
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-} */
 .parenttitle_S{
     height: 10%;
     width: 100%;
@@ -602,14 +540,16 @@ html{
 }
 .skills_title{
     display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    column-gap: 70px;
+    justify-content: center;
+    column-gap: 100px;
 }
 .skills_title::before, .skills_title::after{
     content: "";
-    height: 2px;
-    width: 650px;
+    height: 2.5px;
+    width: 600px;
     background-color: black;
     display: block;
 }
@@ -622,9 +562,7 @@ html{
     width: 100%; 
     justify-content: center;
     align-items: center;
-    border: red solid 2px;
 }
-
 .skill-card {
     background-color: white;
     border-radius: 8px;
@@ -632,7 +570,6 @@ html{
     padding: 20px;
     text-align: center;
 }
-
 .icon {
     font-size: 25px;
     font-weight: bold;
@@ -659,18 +596,15 @@ html{
     justify-content: center;
     margin: 0 auto 10px;
 }
-
 h3 {
     color: #ab1457;
     margin-bottom: 10px;
 }
-
 p {
     color: black;
     font-size: 14px;
     margin-bottom: 20px;
 }
-
 .progress-bar {
     background-color: #ddd;
     border-radius: 25px;
@@ -678,13 +612,10 @@ p {
     height: 10px;
     overflow: hidden;
 }
-
 .progress {
     height: 100%;
     border-radius: 25px;
 }
-
-
 .progress-photoshop {
     width: 85%; 
     background-color: #ab1457; 
@@ -715,6 +646,8 @@ p {
     background-color: #ab1457; 
 }
 
+
+
  /* FIFTH SECTION 'GALLERY' */
 .section_five{
     height: 100vh;
@@ -724,14 +657,14 @@ p {
     justify-content: space-around;
     align-items: center;
     background-color: #ffffff;
-    border: black solid 2px;
+
  }
 .parenttitle_G{
     height: 10%;
     width: 100%;
-    border: black solid 2px;
     display: flex;
-    justify-content:start;
+    justify-content: center;
+
 }
 .gallery_cont{
     display: flex;
@@ -741,8 +674,10 @@ p {
 }
 .gallery_title{
     display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    justify-content: center;
     column-gap: 100px;
 }
 .gallery_title::before, .gallery_title::after{
@@ -752,27 +687,23 @@ p {
     background-color: black;
     display: block;
 }
-.parentcontent_G{
+.parentgal{
     height: 90%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: red solid 2px;
-}
-
-.parentcontent_G{
-    height: 70%;
     width: 60%;
+    display: flex;
+    align-items: center;
+
+}
+.parentcontent_G{
+    height: 80%;
+    width: 100%;
     align-items: center;
     display: flex;
-    border: red solid 2px;
-
+    justify-content: center;
 }
 .galleryL{
     height: 100%;
     width: 50%;
-
     display: flex;
     justify-content: center;
 }
@@ -837,96 +768,16 @@ p {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+
 /* SIXTH SECTION 'REVIEWS' */
-/* .section_six{ 
-    height: 100vh;
-    width: 100vw;
-    background-color: #ffffff;
-    border: black solid 2px;
-}
-.parenttitle_R{
-    height: 10%;
-    width: 100%;
-    border: black solid 2px;
-    display: flex;
-    justify-content: start;
-}
-.reviews_cont{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    margin-left: 10px;
-}
-.reviews_title{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    column-gap: 300px;
-}
-.reviews_title::after{
-    content: "";
-    height: 2px;
-    width: 1315px;
-    background-color: black;
-    display: block;
-}
-.parentcontent_R{
-    height: 90%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: blue solid 2px;
-}
-.mainbox{
-    height: 90%;
-    width: 90%;
-    flex-direction: column;
-    border: green solid 2px;
-    gap: 5px;
-}
-.first_review{
-    height: 25%;
-    width: 100%;
-    border: red solid 2px;
-}
-.pic1{
-    height: 25%;
-    width: 100%;
-    border: red solid 2px;
-    display: flex;
-    align-items: start;
-}
-.second_review{
-    height: 25%;
-    width: 100%;
-    border: orange solid 2px;
-}
-.third_review{
-    height: 25%;
-    width: 100%;
-    border: yellow solid 2px;
-}
-.fourth_review{
-    height: 25%;
-    width: 100%;
-    border: green solid 2px;
-}
-.footer{
-    height: 10%;
-    width: 100%;
-    border: blue solid 2px;
-}*/
 .section_six{ 
     height: 100vh;
     width: 100vw;
     background-color: #ffffff;
-    border: black solid 2px;
 }
 .parenttitle_R{
     height: 10%;
     width: 100%;
-    border: black solid 2px;
     display: flex;
     justify-content:start;
 }
@@ -934,18 +785,20 @@ p {
     display: flex;
     align-items: center;
     justify-content: start;
-    /* margin: 20px; */
+    margin: 20px;
 }
 .reviews_title{
     display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    justify-content: center;
     column-gap: 100px;
 }
 .reviews_title::after{
     content: "";
     height: 2.5px;
-    width: 1320px;
+    width: 1280px;
     background-color: black;
     display: block;
 }
@@ -955,12 +808,11 @@ p {
     margin: auto;
     text-align: center;
     padding: 20px 0;
-    border: green solid 2px;
 }
 
-/* h1 {
+h1 {
     margin-bottom: 30px;
-} */
+}
 
 .review {
     display: flex;
@@ -1004,7 +856,6 @@ p {
     background-color: #ab1457;
     color: #fff;
     padding: 20px 0;
-    border: orange solid 2px;
 }
 
 .footer-content {
@@ -1049,15 +900,142 @@ p {
     color: black;
 }
 .right {
-    width: 70%; /* Optional: adjust width as needed */
-    text-align: center; /* Center the text horizontally */
-    margin: 0 auto; /* Center the block within the parent */
+    width: 70%;
+    text-align: center; 
+    margin: 0 auto; 
 }
 
 .footer p {
-    margin: 5px 0; /* Add spacing between paragraphs */
-    font-size: 14px; /* Adjust font size */
-    line-height: 1.5; /* Ensure proper spacing for readability */
+    margin: 5px 0; 
+    font-size: 14px; 
+    line-height: 1.5; 
 }
 
 
+
+/* RESPONSIVENESS */
+/* @media (min-width: 0px) and (max-width: 480px) {
+    body {
+        font-size: 14px; 
+        line-height: 1.5;
+    }
+
+    .section_one .logo {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .child1, .child2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hobby_cont {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .parent1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery-section, .reviews-section {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+    section {
+        padding: 15px;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .skills-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .reviews-section .review-card {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 20px 40px;
+    }
+
+    .skills-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1040px) {
+    section {
+        padding: 30px 60px;
+    }
+
+    .nav ul {
+        justify-content: flex-end;
+    }
+
+    .skills-section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gallery-section {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .reviews-section {
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1440px) {
+    section {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .nav ul li a {
+        font-size: 18px;
+    }
+
+    .gallery-section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .reviews-section {
+        justify-content: center;
+        gap: 40px;
+    }
+} */
