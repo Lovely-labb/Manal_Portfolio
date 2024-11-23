@@ -21,19 +21,23 @@ html{
     background-color: #ab1457;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     color: white;
     /* position: fixed; */
     
 }
 .logo{
-    margin: 15px;
+    margin: 25px;
     width: 50%;
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 20px;
     font-size: 10px;
+    border: black solid 2px;
+}
+.logo h2{
+    font-size: 20px;
 }
 .WDlogo{
     padding-top: 10px;
@@ -44,9 +48,11 @@ html{
     border-radius: 100px;
 }
 .nav{
-    margin: 25px;
+    margin-top: 10px;
     width: 50%;
-    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav a {
     text-decoration: none; 
@@ -69,7 +75,9 @@ html{
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
-  }
+    font-size: 20px;
+
+}
 
 
 
@@ -82,13 +90,11 @@ html{
 .child1{
     height: 40%;
     width: 100%;
-
 }
 .background{
     height: 100%;
     width: 100%;
     position: relative;
-
 }
 .bg{
     height: 100%;
@@ -106,6 +112,10 @@ html{
     color: black;
     font-size: 20px;
 }
+.background_text h1{
+    color: black;
+    font-size: 25px;
+}
 
 .child2{
     height: 60%;
@@ -117,6 +127,8 @@ html{
     height: 100%;
     width: 30%;
     margin-left: 150px;
+    border: black solid 2px;
+
 }
 .container_ID{
     height: 70%;
@@ -198,6 +210,8 @@ html{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    font-size: 15px;
+
 }
 .box1 h5{
     color: black;
@@ -212,6 +226,8 @@ html{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    font-size: 15px;
+
 }
 .box2 h5{
     color: black;
@@ -226,6 +242,8 @@ html{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    font-size: 15px;
+
 }
 .box3 h5{
     color: black;
@@ -251,6 +269,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: black solid 2px;
 }
 .hobby_cont{
     display: flex;
@@ -607,6 +626,7 @@ html{
 h3 {
     color: #ab1457;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 p {
     color: black;
@@ -872,7 +892,7 @@ p {
 }
 
 .footer-content {
-    height: 150%;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -926,54 +946,788 @@ p {
 
 
 
-/* RESPONSIVENESS */
-@media(min-width: 0px) and (max-width:480px)
-{
-   section{
-    background-color: red;
-   }
 
- 
-}
- 
-@media(min-width: 576px)
-{
+/* RESPONSIVENESS */
+@media (max-width: 480px){
+    
     section{
-        background-color: blue;
-       }
-   
-}
- 
-@media(min-width: 768px)
-{
-    section{
-        background-color: violet;
-       }
-       
-}
- 
-@media(min-width: 1040px)
-{
-    section {
         background-color: white;
-        height: 82vh;
-       }
-/* SECTION ONE */
+    }
+
+
+
+}
+
+
+/* ------------------------------------------------------------------- */
+@media (min-width: 480px) and (max-width: 576px){
+
+    section{
+        background-color: white;
+    }
+}
+
+
+/* ------------------------------------------------------------------- */
+@media (min-width: 576px) and (max-width: 768px){
+
+    .section_one{
+        background-color: white;
+        height: 87vh;
+    }
+    /* SECTION ONE */
     .firstline{
         height: 8.2%;
         width: 100%;
     }
+    .logo{
+        margin: 15px;
+        width: 50%;
+        gap: 20px;
+        font-size: 10px;
+    }
+    .logo h2{
+        font-size: 9px;
+    }
+    .WDlogo{
+        padding-top: 10px;
+        height: 40px;
+        width: 15%;
+    }
+    .nav{
+        margin: 33px;
+        width: 58%;
+    }
+    .nav ul li a {
+        font-size: 10px;
+    }
     .child1{
         height: 33%;
         width: 100%;
-    
+    }
+    .background{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .bg{
+        height: 100%;
+        width: 100%;
+    }
+    .background_text{
+        line-height: 25px;
+    }
+    .background_text h3{
+        color: black;
+        font-size: 18px;
     }
     .containerL{
-        height: 82%;
-        width: 40%;
+        height: 100%;
+        width: 45%;
+        margin-right: 10px;
+        margin-left: 35px;
         border: black solid 2px;
+    }
+    .ID{
+        height: 130px;
+        width: 130px;
+    }
+    .text_containerL h1{
+        font-size: 16px;
+    }
+    .text_containerL h4{
+        font-size: 13px;
+    }
+    .containerR{
+        height: 85%;
+        width: 45%;
+        border: black solid 2px;
+    }
+    .aboutme h2{
+        font-size: 13px;
+    }
+    .aboutme h1{
+        font-size: 16px;
+    }
+    .div2{
+        margin-bottom: 15px;
+    }
+    .abouttext p{
+        font-size: 10px;
+    }
+    .div3{
+        height: 20%;
+        width: 100%;
+        border: black solid 2px;
+    }
+    .box{
+        height: 90%;
+        width: 25%;
+    }
+    .box1 h4{
+        margin-top: 13px;
+        font-size: 13px;
+    }
+    .box1 h5{
+        font-size: 8.3px;
+    }
+    .box2 h4{
+        margin-top: 13px;
+        font-size: 13px;
+    }
+    .box2 h5{
+        font-size: 5.8px;
+    }
+    .box3 h4{
+        margin-top: 13px;
+        font-size: 13px;
+    }
+    .box3 h5{
+        font-size: 5.5px;
+    }
+ 
+/* SECTION TWO HOBBIES*/
+ 
+    .section_two{
+        border: red solid 2px;
+        height: 87vh;
+    }
+    .parenttitle_H{
+        height: 7.5%;
+        border: black solid 2px;
+    }
+    .parentcontent_H{
+        height: 80%;
+        width: 100%;
+    }
+    .hobby_title::before, .hobby_title::after{
+        width: 135px;
+    }
+    .parent1{
+        height: 80%;
+        width: 90%;
+    }
+    .baby1, .baby2, .baby3{
+        height: 65%;
+        width: 30%;
+    }
+    .code_icon{
+        height: 75%;
+        width: 75%;
+    }
+    .code_text h4{
+        font-size: 17px;
+    }
+    .code_text p{
+        font-size: 12px;
+    }
+    .sport_icon{
+        height: 75%;
+        width: 75%;
+    }
+    .sport_text h4{
+        font-size: 16px;
+    }
+    .sport_text p{
+        font-size: 12px;
+    }
+    .travel_icon{
+        height: 75%;
+        width: 75%;
+    }
+    .travel_text h4{
+        font-size: 17px;
+    }
+    .travel_text p{
+        font-size: 11px;
+    }
+
+ 
+/* SECTION THREE SERVICES*/
+    .section_three{
+        border: black solid 2px;
+        height: 87vh;
+    }
+    .parenttitle_A{
+        height: 8.5%;
+        width: 100%;
+        border: black solid 2px;
+    }
+    .parentcontent_A{
+        height: 90%;
+        width: 100%;
+        border: blue solid 2px;
+    }
+    .services_title::before, .services_title::after{
+        height: 2.4px;
+        width: 135px;
+ 
+    }
+    .thirdparent{
+        height: 65%;
+        width: 85%;
+        border: black solid 2px;
+    }
+    .web_pic{
+        height: 75%;
+        width: 75%;
+    }
+    .web_title h3{
+        font-size: 10px;
+    }
+    .web_title p{
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .gd_pic{
+        height: 75%;
+        width: 75%;
+    }
+    .gd_title h3{
+        font-size: 13px;
+    }
+    .gd_title p{
+        font-size: 12px;
+        line-height: 25px;
+    }
+/* SECTION FOUR SKILLS*/
+    .section_four{
+        border: green solid 2px;
+        height: 87vh;
+    }
+    .parenttitle_S{
+        height: 8.5%;
+        width: 100%;
+        border: black solid 2px;
+    }
+    .skills_title::before, .skills_title::after{
+        width: 135px;
+    }
+    .parentcontent_S{
+        height: 90%;
+        width: 90%;
+        border: green solid 2px;
+    }
+    .skills-section {
+        height: 65%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        max-width: 900px;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+        border: yellow solid 2px;
+    }
+    .icon{
+        font-size: 13px;
+        width: 45px;
+        height: 45px;
+    }
+    .icon1{
+        font-size: 8px;
+    }
+    h3 {
+        margin-bottom: 10px;
+        font-size: 9px;
+    }
+    p {
+        color: black;
+        font-size: 8px;
+        margin-bottom: 20px;
+    }
+ 
+/* SECTION FIVE GALLERY */
+    .section_five{
+        border: red solid 2px;
+        height: 87vh;
+    }
+    .parenttitle_G{
+        height: 8.5%;
+        border: black solid 2px;
+    }
+    .gallery_title::before, .gallery_title::after{
+        width: 135px;
+    }
+    .parentgal{
+        height: 90%;
+        width: 70%;
+        border: red solid 2px;
+    }
+    .parentcontent_G{
+        height: 40%;
+        width: 100%;
+    }
+ 
+/* SECTION SIX REVIEWS */
+    .section_six{
+        border: black solid 2px;
+        height: 87vh;
+    }
+    .parenttitle_R{
+        height: 8.5%;
+        width: 100%;
+        border: black solid 2px;
+    }
+    .reviews_cont h2{
+        font-size: 15px;
+    }
+    .reviews_title::after{
+        content: "";
+        height: 2.5px;
+        width: 500px;
+        background-color: black;
+        display: block;
+    }
+    .container {
+        height: 80%;
+        width: 80%;
+        border: green solid 2px;
+    }
+    h2 {
+        font-size: 11px;
+        margin: 0;
+        margin-left: 3px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .left{
+        height: 100%;
+        width: 30%;
+    }
+    .footer-left .footer-icon {
+        width: 13px;
+        height: 13px;
+        margin: 0 10px;
+    }
+    .footer-right span {
+        font-size: 8px;
+        color: black;
+    }
+    .right {
+        width: 40%;
+        text-align: center; 
+        margin: 0 auto; 
+    }
+    .footer p {
+        font-size: 6.5px; 
+        line-height: 1.3; 
+    }
+
+}
+
+
+/* ------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1040px) {
+
+    .section_one{
+        background-color: white;
+        height: 68vh;
+    }
+    /* SECTION ONE */
+    .firstline{
+        height: 8.2%;
+        width: 100%;
+    }
+    .logo{
+        margin: 18px;
+        width: 50%;
+        gap: 20px;
+        font-size: 10px;
+    }
+    .logo h2{
+        font-size: 16px;
+    }
+    .WDlogo{
+        padding-top: 10px;
+        height: 50px;
+        width: 15%;
+    }
+    .nav{
+        margin: 33px;
+        width: 55%;
+    }
+    .nav ul li a {
+        font-size: 14px;
+    }
+    .child1{
+        height: 33%;
+        width: 100%;
+    }
+    .background{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .bg{
+        height: 100%;
+        width: 100%;
+    }
+    .background_text{
+        line-height: 25px;
+    }
+    .background_text h3{
+        color: black;
+        font-size: 18px;
+    }
+    .containerL{
+        height: 100%;
+        width: 40%;
         margin-right: 10px;
         margin-left: 80px;
+        border: black solid 2px;
+    }
+    .ID{
+        height: 145px;
+        width: 145px;
+    }
+    .text_containerL h1{
+        font-size: 18px;
+    }
+    .text_containerL h4{
+        font-size: 14px;
+    }
+    .containerR{
+        height: 85%;
+        width: 45%;
+        border: black solid 2px;
+    }
+    .aboutme h2{
+        color: black;
+        font-size: 15px;
+        margin: 0;
+    }
+    .aboutme h1{
+        color: #ab1457;
+        font-size: 20px;
+    }
+    .div2{
+        margin-bottom: 15px;
+    }
+    .abouttext p{
+        font-size: 12px;
+    }
+    .div3{
+        height: 20%;
+        width: 100%;
+        border: black solid 2px;
+    }
+    .box{
+        height: 90%;
+        width: 25%;
+    }
+    .box1 h4{
+        margin-top: 10px;
+    }
+    .box1 h5{
+        font-size: 11px;
+    }
+    .box2 h4{
+        margin-top: 10px;
+    }
+    .box2 h5{
+        font-size: 8.5px;
+    }
+    .box3 h4{
+        margin-top: 10px;
+    }
+    .box3 h5{
+        font-size: 8px;
+    }
+ 
+/* SECTION TWO HOBBIES*/
+ 
+    .section_two{
+        border: red solid 2px;
+        height: 68vh;
+    }
+    .parenttitle_H{
+        height: 7.5%;
+        border: black solid 2px;
+    }
+    .parentcontent_H{
+        height: 80%;
+        width: 100%;
+    }
+    .hobby_title::before, .hobby_title::after{
+        width: 220px;
+    }
+    .parent1{
+        height: 80%;
+        width: 90%;
+    }
+    .baby1, .baby2, .baby3{
+        height: 70%;
+        width: 30%;
+    }
+    .code_icon{
+        height: 80%;
+        width: 80%;
+    }
+    .code_text h4{
+        font-size: 20px;
+    }
+    .code_text p{
+        font-size: 14px;
+    }
+    .sport_icon{
+        height: 80%;
+        width: 80%;
+    }
+    .sport_text h4{
+        font-size: 20px;
+    }
+    .sport_text p{
+        font-size: 14px;
+    }
+    .travel_icon{
+        height: 80%;
+        width: 80%;
+    }
+    .travel_text h4{
+        font-size: 20px;
+    }
+    .travel_text p{
+        font-size: 13.5px;
+    }
+
+ 
+/* SECTION THREE SERVICES*/
+    .section_three{
+        border: black solid 2px;
+        height: 68vh;
+    }
+    .parenttitle_A{
+        height: 8.5%;
+        width: 100%;
+        border: black solid 2px;
+    }
+    .parentcontent_A{
+        height: 90%;
+        width: 100%;
+        border: blue solid 2px;
+    }
+    .services_title::before, .services_title::after{
+        height: 2.5px;
+        width: 230px;
+ 
+    }
+    .thirdparent{
+        height: 70%;
+        width: 85%;
+        border: black solid 2px;
+    }
+    .web_pic{
+        height: 85%;
+        width: 85%;
+    }
+    .web_title h3{
+        font-size: 15px;
+    }
+    .web_title p{
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .gd_pic{
+        height: 85%;
+        width: 85%;
+    }
+    .gd_title h3{
+        font-size: 17px;
+    }
+    .gd_title p{
+        font-size: 14px;
+        line-height: 27px;
+    }
+/* SECTION FOUR SKILLS*/
+    .section_four{
+        border: green solid 2px;
+        height: 68vh;
+    }
+    .parenttitle_S{
+        height: 8.5%;
+        width: 100%;
+        border: black solid 2px;
+    }
+    .skills_title::before, .skills_title::after{
+        width: 230px;
+    }
+    .parentcontent_S{
+        height: 90%;
+        width: 90%;
+        border: green solid 2px;
+    }
+    .skills-section {
+        height: 70%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        max-width: 900px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        border: yellow solid 2px;
+    }
+    .icon{
+        font-size: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    h3 {
+        color: #ab1457;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    p {
+        color: black;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+ 
+/* SECTION FIVE GALLERY */
+    .section_five{
+        border: red solid 2px;
+        height: 68vh;
+    }
+    .parenttitle_G{
+        height: 8.5%;
+        border: black solid 2px;
+    }
+    .gallery_title::before, .gallery_title::after{
+        width: 350px;
+    }
+    .parentgal{
+        height: 90%;
+        width: 70%;
+        border: red solid 2px;
+    }
+    .parentcontent_G{
+        height: 50%;
+        width: 100%;
+    }
+ 
+/* SECTION SIX REVIEWS */
+    .section_six{
+        border: black solid 2px;
+        height: 68vh;
+    }
+    .parenttitle_R{
+        height: 8.5%;
+        width: 100%;
+        border: black solid 2px;
+    }
+    .reviews_cont h2{
+        font-size: 15px;
+    }
+    .reviews_title::after{
+        content: "";
+        height: 2.5px;
+        width: 500px;
+        background-color: black;
+        display: block;
+    }
+    .container {
+        height: 80%;
+        width: 80%;
+        border: green solid 2px;
+    }
+    h2 {
+        font-size: 15px;
+        margin: 0;
+        margin-left: 5px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .footer-left .footer-icon {
+        width: 25px;
+        height: 25px;
+        margin: 0 10px;
+    }
+    .footer-right span {
+        font-size: 12px;
+        color: black;
+    }
+    .right {
+        width: 50%;
+        text-align: center; 
+        margin: 0 auto; 
+    }
+    .footer p {
+        font-size: 12px; 
+        line-height: 1.5; 
+    }
+
+}
+    
+
+
+
+
+/* ------------------------------------------------------------------- */
+@media (min-width: 1040px) and (max-width: 1440px){
+
+    .section_one{
+        background-color: white;
+        height: 82vh;
+    }
+    /* SECTION ONE */
+    .firstline{
+        height: 8.2%;
+        width: 100%;
+    }
+    .logo{
+        margin: 18px;
+        width: 50%;
+        gap: 20px;
+        font-size: 10px;
+    }
+    .logo h2{
+        font-size: 18px;
+    }
+    .WDlogo{
+        padding-top: 10px;
+        height: 50px;
+        width: 15%;
+    }
+    .nav{
+        margin: 33px;
+        width: 55%;
+    }
+    .nav ul li a {
+        font-size: 18px;
+    }
+    .child1{
+        height: 33%;
+        width: 100%;
+    }
+    .background{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .bg{
+        height: 100%;
+        width: 100%;
+    }
+    .background_text{
+        line-height: 25px;
+    }
+    .background_text h3{
+        color: black;
+        font-size: 18px;
+    }
+    .containerL{
+        height: 100%;
+        width: 40%;
+        margin-right: 10px;
+        margin-left: 80px;
+        border: black solid 2px;
+    }
+    .ID{
+        height: 160px;
+        width: 160px;
     }
     .text_containerL h1{
         font-size: 20px;
@@ -982,35 +1736,54 @@ p {
         font-size: 16px;
     }
     .containerR{
-        height: 75%;
+        height: 85%;
         width: 45%;
         border: black solid 2px;
     }
+    .aboutme h2{
+        font-size: 15px;
+    }
+    .aboutme h1{
+        font-size: 20px;
+    }
     .div2{
-        margin-bottom: 35px;
+        margin-bottom: 15px;
     }
     .abouttext p{
         font-size: 15px;
     }
     .div3{
-        height: 15%;
+        height: 20%;
         width: 100%;
-    
+        border: black solid 2px;
+    }
+    .box{
+        height: 90%;
+        width: 25%;
+    }
+    .box1 h4{
+        margin-top: 10px;
     }
     .box1 h5{
-        font-size: 10px;
+        font-size: 13px;
+    }
+    .box2 h4{
+        margin-top: 10px;
     }
     .box2 h5{
-        font-size: 9.5px;
+        font-size: 10.5px;
+    }
+    .box3 h4{
+        margin-top: 10px;
     }
     .box3 h5{
-        font-size: 8.5px;
+        font-size: 10px;
     }
-
-/* SECTION TWO */
-
+ 
+/* SECTION TWO HOBBIES*/
+ 
     .section_two{
-        border: red solid 2px;
+        background-color: white;
         height: 82vh;
     }
     .parenttitle_H{
@@ -1029,8 +1802,12 @@ p {
         width: 80%;
     }
     .baby1, .baby2, .baby3{
-        height: 60%;
+        height: 70%;
         width: 30%;
+    }
+    .code_icon{
+        height: 90%;
+        width: 90%;
     }
     .code_text h4{
         font-size: 25px;
@@ -1038,13 +1815,17 @@ p {
     .code_text p{
         font-size: 14.5px;
     }
+    .sport_icon{
+        height: 90%;
+        width: 100%;
+    }
     .sport_text h4{
         font-size: 25px;
     }
     .sport_text p{
         font-size: 14.5px;
     }
-    .sport_icon{
+    .travel_icon{
         height: 90%;
         width: 90%;
     }
@@ -1054,11 +1835,8 @@ p {
     .travel_text p{
         font-size: 14.5px;
     }
-    .travel_icon{
-        height: 90%;
-        width: 90%;
-    }
 
+ 
 /* SECTION THREE SERVICES*/
     .section_three{
         border: black solid 2px;
@@ -1077,14 +1855,36 @@ p {
     .services_title::before, .services_title::after{
         height: 2.5px;
         width: 350px;
-
     }
     .thirdparent{
         height: 60%;
         width: 80%;
         border: black solid 2px;
-
     }
+    .web_pic{
+        height: 90%;
+        width: 90%;
+    }
+    .web_title h3{
+        font-size: 18px;
+    }
+    .web_title p{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .gd_pic{
+        height: 90%;
+        width: 90%;
+    }
+    .gd_title h3{
+        font-size: 18px;
+    }
+    .gd_title p{
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+
 /* SECTION FOUR SKILLS*/
     .section_four{
         border: green solid 2px;
@@ -1102,21 +1902,21 @@ p {
         height: 90%;
         width: 90%;
         border: green solid 2px;
-
+ 
     }
     .skills-section {
         height: 70%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(3, 1fr);
         gap: 15px;
-        max-width: 900px; 
-        width: 90%; 
+        max-width: 900px;
+        width: 90%;
         justify-content: center;
         align-items: center;
         border: yellow solid 2px;
-
+ 
     }
-
+ 
 /* SECTION FIVE GALLERY */
     .section_five{
         border: red solid 2px;
@@ -1138,7 +1938,7 @@ p {
         height: 60%;
         width: 100%;
     }
-
+ 
 /* SECTION SIX REVIEWS */
     .section_six{
         border: black solid 2px;
@@ -1148,7 +1948,7 @@ p {
         height: 8.5%;
         width: 100%;
         border: black solid 2px;
-
+ 
     }
     .reviews_cont h2{
         font-size: 17px;
@@ -1166,10 +1966,12 @@ p {
         border: green solid 2px;
     }
 }
- 
+
+
+/* ------------------------------------------------------------------- */
 @media(min-width: 1440px)
 {
-    section{
+    .section_one{
         background-color: white;
         height: 100vh;
        }
@@ -1178,16 +1980,56 @@ p {
         height: 10%;
         width: 100%;
     }
+    .logo{
+        margin: 25px;
+        width: 50%;
+        gap: 20px;
+        font-size: 10px;
+    }
+    .logo h2{
+        font-size: 20px;
+    }
+    .WDlogo{
+        padding-top: 10px;
+        height: 50px;
+        width: 10%;
+    }
+    .nav{
+        margin: 35px;
+        width: 50%;
+    }
+    .nav ul li a {
+        font-size: 20px;
+    }
     .child1{
         height: 40%;
         width: 100%;
-    
+    }
+    .background{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .bg{
+        height: 100%;
+        width: 100%;
+    }
+    .background_text{
+        line-height: 30px;
+    }
+    .background_text h3{
+        color: black;
+        font-size: 20px;
     }
     .containerL{
         height: 100%;
         width: 30%;
         margin-right: 10px;
         margin-left: 150px;
+    }
+    .ID{
+        height: 170px;
+        width: 170px;
     }
     .text_containerL h1{
         font-size: 25px;
@@ -1208,21 +2050,34 @@ p {
     .div3{
         height: 25%;
         width: 100%;
+        border: black solid 2px;
     }
     .box{
-        height: 80%;
+        height: 90%;
         width: 25%;
     }
+    .box1 h4{
+        margin-top: 20px;
+        font-size: 15px;
+    }
     .box1 h5{
+        font-size: 15px;
+    }
+    .box2 h4{
+        margin-top: 20px;
         font-size: 15px;
     }
     .box2 h5{
         font-size: 14px;
     }
+    .box3 h4{
+        margin-top: 20px;
+        font-size: 15px;
+    }
     .box3 h5{
         font-size: 13px;
     }
-
+ 
 /* SECTION TWO HOBBIES*/
     .section_two{
         border: red solid 2px;
@@ -1256,11 +2111,19 @@ p {
         height: 75%;
         width: 30%;
     }
+    .code_icon{
+        height: 100%;
+        width: 100%;
+    }
     .code_text h4{
         font-size: 30px;
     }
     .code_text p{
         font-size: 15px;
+    }
+    .sport_icon{
+        height: 100%;
+        width: 100%;
     }
     .sport_text h4{
         font-size: 30px;
@@ -1268,13 +2131,17 @@ p {
     .sport_text p{
         font-size: 15px;
     }
+    .travel_icon{
+        height: 100%;
+        width: 100%;
+    }
     .travel_text h4{
         font-size: 30px;
     }
     .travel_text p{
         font-size: 15px;
     }
-
+ 
 /* SECTION THREE SERVICES*/
     .section_three{
         border: black solid 2px;
@@ -1292,12 +2159,20 @@ p {
     .services_title::before, .services_title::after{
         height: 2px;
         width: 500px;
-
     }
     .thirdparent{
         height: 70%;
         width: 60%;
     }
+    .web_title p{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .gd_title p{
+        font-size: 14px;
+        line-height: 35px;
+    }
+
 
 /* SECTION FOUR SKILLS*/
     .section_four{
@@ -1320,14 +2195,17 @@ p {
     .skills-section {
         height: 75%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        max-width: 1000px; 
-        width: 100%; 
+        max-width: 1000px;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
-
+    .icon1{
+        font-size: 10px;
+    }
+ 
 /* SECTION FIVE GALLERY */
     .section_five{
         border: red solid 2px;
@@ -1348,7 +2226,7 @@ p {
         height: 80%;
         width: 100%;
     }
-
+ 
 /* SECTION SIX REVIEWS */
     .section_six{
         border: black solid 2px;
@@ -1375,3 +2253,4 @@ p {
         display: block;
     }
 }
+
