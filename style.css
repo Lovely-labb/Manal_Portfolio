@@ -193,6 +193,7 @@ html{
     align-items: center;
 }
 .box{
+        border: #ca8787 3px solid;
     height: 90%;
     width: 25%;
     margin-left: 10px;
@@ -711,11 +712,12 @@ p {
     align-items: center;
 }
 .parentcontent_G{
-    height: 80%;
+    height: 90%;
     width: 100%;
     align-items: center;
     display: flex;
     justify-content: center;
+    border: black solid 2px;
 }
 .galleryL{
     height: 100%;
